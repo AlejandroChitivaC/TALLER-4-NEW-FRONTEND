@@ -38,7 +38,7 @@
                     <li class="nav-item dropdown">
                         <a style="color: white; font-size: 18px;" class="nav-link dropdown-toggle" href="#"
                             id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categorías
+                            Colecciones
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a style="color: white; font-size: 18px;" class="dropdown-item"
@@ -61,11 +61,8 @@
                         </ul>
                     </li>
                 </ul>
-                <form id="busqueda" class="d-flex">
-                    <input style="border-radius: 30px;" class="form-control me-2" type="search" placeholder="Buscar..."
-                        aria-label="Search">
-                    <button id="searchbar" class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+                <a href=""><button id="searchbar" style="color: rgb(0, 0, 0);" class="btn btn-outline-success" type="submit">Recargar FCoins</button></a>
+
             </div>
         </div>
     </nav>
@@ -77,7 +74,7 @@
     <div class="container">
         <div class="title">Registro</div>
         <div class="content">
-            <form action="#">
+            <form id="regform" action="#">
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Nombre Completo</span>
@@ -103,18 +100,33 @@
                         <span class="details">Confirmar Contraseña</span>
                         <input id="rpass" type="password" placeholder="Confirma tu contraseña" required>
                     </div>
+                    <div class="input-box">
+                        <span class="details">Rol</span>
+                        <select id="rol" name="rol" class="ms-1 edit body1Regular form-control">
+                            <option id="rolcomp" value="">Comprador</option>
+                            <option id="rolart" value="">Artista</option>
+                        </select>    
+                    </div>
+                    <div class="input-box">
+                        <span class="details">FCoins</span>
+                        <input id="Fcoins" type="number" placeholder="Cantidad Fcoins (Recomendada 0) " required>
+                    </div>
                 </div>
-                <div class="button" onclick="getData()">
-                    <a href="/web/perfil.html"><input type="submit" value="Registrarse"></a>
+                <div class="button">
+                    <a href="/web/perfil.html" onclick="getData()">
+                        <input type="submit" value="Registrarse">
+                    </a>
+
+                    
                 </div>
             </form>
         </div>
     </div>
 
-
+    
 </body>
 <script src="https://kit.fontawesome.com/dac7c8fdd5.js" crossorigin="anonymous"></script>
-<script src="/scripts/sigggnup.js"></script>
+<script src="/scripts/signupv2.js"></script>
 <footer></footer>
 
 </html>
