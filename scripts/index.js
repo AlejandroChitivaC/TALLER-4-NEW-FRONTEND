@@ -23,7 +23,6 @@ const getData = async () => {
                 <img src="${imagen}" alt="">
                 <p style="color:blue; font-weight:bold">${"@" + nombre}</p>
                 <p>${precio}</p>
-                <p>${"Categoría: " + categoria}</p>
                 <p>${"Colección"+coleccion}</p>
                 <p>${descripcion}</p>
                 <button id="btnlikes" class="btn btn-primary" style="border-radius:50px" onclick="contar()">${likes} Like</button>

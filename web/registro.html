@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -61,7 +62,7 @@
                         </ul>
                     </li>
                 </ul>
-                <a href=""><button id="searchbar" style="color: rgb(0, 0, 0);" class="btn btn-outline-success" type="submit">Recargar FCoins</button></a>
+                <a href="/web/recargar.html"><button id="searchbar" style="color: rgb(0, 0, 0);" class="btn btn-outline-success" type="submit">Recargar FCoins</button></a>
 
             </div>
         </div>
@@ -90,7 +91,7 @@
                     </div>
                     <div class="input-box">
                         <span class="details">Foto de Perfil</span>
-                        <input id="foto" type="file" required>
+                        <input id="foto-file" type="file" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Contraseña</span>
@@ -103,8 +104,8 @@
                     <div class="input-box">
                         <span class="details">Rol</span>
                         <select id="rol" name="rol" class="ms-1 edit body1Regular form-control">
-                            <option id="rolcomp" value="">Comprador</option>
-                            <option id="rolart" value="">Artista</option>
+                            <option id="rolcomp" value="Comprador">Comprador</option>
+                            <option id="rolart" value="Artista">Artista</option>
                         </select>    
                     </div>
                     <div class="input-box">
@@ -114,10 +115,8 @@
                 </div>
                 <div class="button">
                     <a href="/web/perfil.html" onclick="getData()">
-                        <input type="submit" value="Registrarse">
+                        <input type="submit" id="register" value="Registrarse">
                     </a>
-
-                    
                 </div>
             </form>
         </div>
@@ -125,6 +124,7 @@
 
     
 </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://kit.fontawesome.com/dac7c8fdd5.js" crossorigin="anonymous"></script>
 <script src="/scripts/signupv2.js"></script>
 <footer></footer>

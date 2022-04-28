@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function(e) {
     }
    let data= console.log(jsonData); 
    data.json();
-    
   }
 
 });
