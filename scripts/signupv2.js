@@ -61,5 +61,6 @@ var getData = function () {
       fcoins: fcoins.value,
     };
     JSON.stringify(obj);
+    window.location = "../index.html";
   });
 };

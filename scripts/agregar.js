@@ -27,4 +27,6 @@ formulario.addEventListener("submit", async (esc) => {
   });
   let data = resp.json();
   console.log(data);
+  alert("Su obra ha sido agregada");
+  window.location = "../web/social.html";
 });
